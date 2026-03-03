@@ -1,8 +1,14 @@
+onst express = require("express");
+const multer = require("multer");
 const cors = require("cors");
-app.use(cors());
-const { PDFDocument } = require("pdf-lib");
 const fs = require("fs");
 const path = require("path");
+const { PDFDocument } = require("pdf-lib");
+
+const app = express();   // VERY IMPORTANT
+
+app.use(cors());
+app.use(express.json());
 
 app.post("/compress", upload.single("pdf"), async (req, res) => {
   try {
