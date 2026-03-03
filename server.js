@@ -58,7 +58,7 @@ app.post("/compress", upload.single("pdf"), (req, res) => {
 
 /* Start server */
 app.get('/', (req, res) => {
-  res.send("PDF Compression API is running");
+  res.send('PDF Compression API is running');
 });
 
 const PORT = process.env.PORT || 5000;
