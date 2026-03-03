@@ -8,8 +8,8 @@ const path = require("path");
 
 const app = express();
 app.use(cors({
-  origin: ['https//wix.com',
- 'https://*.wix.com']
+  origin: '*',
+  methods: ['GET','post']
 }));
 
 /* Upload configuration */
