@@ -65,5 +65,5 @@ app.post("/compress", upload.single("pdf"), async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(Server running on port ${PORT});
+  console.log('Server is running');
 });
